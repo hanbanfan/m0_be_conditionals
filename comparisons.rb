@@ -22,52 +22,58 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
-# this should print: true
+puts "Is number_teachers less than number_students?", number_teachers < number_students
+# true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
-# this should print: false
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
+# false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
-# this should print: true
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
+# true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
-# this should print: true
+puts "Is number_students greater than or equal to 20?", number_students >= 20
+# true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
-# this should print: false
+puts "Is number_students greater than or equal to 21?", number_students >= 21
+# false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
-# this should print: true
+puts "Is number_students less than or equal to 20?", number_students <= 20
+# true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
-# this should print: true
+puts "Is number_students less than or equal to 21?", number_students <= 21
+# true
 
 
 #-------------------
 # PART 2: Articulating what you are doing
 #-------------------
 
-# For the following prompts, you will be given a line of code and your task is to type out a Comment,
-# in English, explaining what that line of code is doing, including what the comparison will evaluate to.
-# Be as technically precise as possible, but don't just copy and paste a definition from the readings.
-# Make sure YOU can explain it that way!
-
 puts 4 < 9
-#YOU DO: Explain.
+# YOU DO: This code compares if 4 is less than 9 using the `<` operator.
+# It evaluates to true, and true is printed to the console.
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: This code assigns the value 3 to the variable `books`. Then it checks if 4 is less than `books`.
+# Since 4 is not less than 3, the comparison evaluates to false, and false is printed to the console.
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: This code assigns 6 to `friends` and 2 to `siblings`. Then it checks if `friends` is greater than `siblings`.
+# Since 6 is greater than 2, the comparison evaluates to true, and true is printed to the console.
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: This code assigns 9 to `attendees` and 8 to `meals`. Then it checks if `attendees` is not equal to `meals`.
+# Since 9 is not equal to 8, the comparison evaluates to true, and true is printed to the console.
 
 
 #-------------------
@@ -80,8 +86,11 @@ finished_homework = false
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
 puts is_hungry && finished_homework
+# false
+
 # Determine if the user is hungry or has completed their homework
 puts is_hungry || finished_homework
+# true
 
 loves_to_play = true
 loves_dog_park = false
@@ -90,16 +99,21 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
+# true
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
+# false
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
+# true
 
 # Determine if the dog loves to play and is a puppy
-# Assume that a dog is a puppy if it is less than 2 years old.
+puts loves_to_play && age < 2
+# true
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: The final line evaluated to true because `loves_to_play` is true and `age < 2` is also true (since age is 1).
+
